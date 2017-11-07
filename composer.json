@@ -9,11 +9,15 @@
             "email": "yingweiliu@pptv.com"
         }
     ],
-    "minimum-stability": "dev",
+    "version":"1.0.2",
     "require": {
-        "php": ">=5.4.0"
+        "php": ">=5.4.0",
+        "ext-curl": "*"
     },
     "autoload": {
+        "classmap": {
+            "think\\oauth\\driver\\Cas": "drivers/thinkphp/Cas.php"
+        },
         "psr-4": {
             "think\\cas\\": "src/"
         }
