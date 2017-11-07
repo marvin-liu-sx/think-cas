@@ -1,6 +1,6 @@
 <?php
 
-namespace Cas;
+namespace think\cas;
 
 class Cas {
 
