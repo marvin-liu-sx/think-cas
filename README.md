@@ -1,1 +1,1 @@
-# thin-cas
+# think-cas
