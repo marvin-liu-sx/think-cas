@@ -1,0 +1,13 @@
+{
+    "name": "cas/think-cas",
+    "description": "thinkphp sso login",
+    "type": "library",
+    "license": "Apache2",
+    "authors": [
+        {
+            "name": "柳英伟",
+            "email": "yingweiliu@pptv.com"
+        }
+    ],
+    "require": {}
+}
