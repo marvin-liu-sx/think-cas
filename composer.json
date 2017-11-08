@@ -1,5 +1,5 @@
 {
-    "name": "PhpCas/think-cas",
+    "name": "php-cas/think-cas",
     "description": "thinkphp sso login",
     "type": "library",
     "license": "Apache2",
