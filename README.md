@@ -1,6 +1,6 @@
 # think-cas
-*一般使用eg.
-~
+### **一般使用eg.**
+~~~
 <?php
 use PhpCas\Cas;
 require_once '../src/Cas.php';
@@ -18,14 +18,14 @@ function login($cas) {
 }
 
 login($cas);
-~
+~~~
 
 
 ***
 
-*thinkphp 调用
+### **thinkphp 调用**
 
-~
+~~~
 <?php
 namespace app\index\controller;
 use think\oauth\driver\Sso;
@@ -43,4 +43,4 @@ class Index
         $sso->login();     
     }
 }
-~
+~~~
