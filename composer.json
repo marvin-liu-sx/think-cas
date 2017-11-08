@@ -16,7 +16,7 @@
     },
     "autoload": {
         "classmap": {
-            "think\\oauth\\driver\\Cas": "think/oauth/driver/Cas.php"
+            "think\\oauth\\driver\\Sso": "think/oauth/driver/Sso.php"
         },
         "psr-4": {
             "PhpCas\\": "src/"
