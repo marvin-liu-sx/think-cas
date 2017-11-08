@@ -1,5 +1,4 @@
 <?php
-
 // +----------------------------------------------------------------------
 // | Copyright (c) 2017 http://www.pptv.com All rights reserved.
 // +----------------------------------------------------------------------
@@ -22,8 +21,7 @@ class Sso {
             'cas_server_ca_cert' => ''
         ];
         $this->config   = array_merge($default, $config);
-        $this->sso= new Cas();
-        $this->sso->config=$this->config;
+        $this->sso= new Cas($this->config);
     }
     /**
      * 登陆
