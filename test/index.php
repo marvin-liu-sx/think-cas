@@ -1,7 +1,6 @@
 <?php
-use think\cas\Cas;
-require_once './src/Cas.php';
-//use think\cas\Cas;
+use PhpCas\Cas;
+require_once '../src/Cas.php';
 
 $config = array(
     'cas_server_url' => 'https://sso.pplive.cn/cas/',

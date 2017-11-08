@@ -1,5 +1,5 @@
 {
-    "name": "marvin9002/think-cas",
+    "name": "PhpCas/think-cas",
     "description": "thinkphp sso login",
     "type": "library",
     "license": "Apache2",
@@ -9,17 +9,17 @@
             "email": "yingweiliu@pptv.com"
         }
     ],
-    "version":"1.0.4",
+    "version":"1.0.5",
     "require": {
         "php": ">=5.4.0",
         "ext-curl": "*"
     },
     "autoload": {
         "classmap": {
-            "think\\oauth\\driver\\Cas": "drivers/thinkphp/Cas.php"
+            "think\\oauth\\driver\\Cas": "think/oauth/driver/Cas.php"
         },
         "psr-4": {
-            "think\\cas\\": "src/"
+            "PhpCas\\": "src/"
         }
     }
 }

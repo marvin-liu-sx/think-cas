@@ -1,12 +1,11 @@
 <?php
 
-namespace think\cas;
+namespace PhpCas;
 
 class Cas {
 
     public $config = array(
         'cas_server_url' => '',
-        'phpcas_path' => '/phpCAS',
         'cas_disable_server_validation' => TRUE,
         'cas_debug' => FALSE,
         'cas_server_ca_cert' => ''
@@ -18,11 +17,9 @@ class Cas {
 				<strong><a href="http://php.net/curl">curl</a></strong> to be able
 				to use CAS authentication.');
         }
-        $dirname = dirname(__FILE__);
         $this->config = array_merge($this->config, $config);
-
-
-        $this->phpcas_path = $dirname . $this->config['phpcas_path'];
+        $this->config['phpcas_path']=dirname(__FILE__).'/phpCAS';
+        $this->phpcas_path = $this->config['phpcas_path'];
         $this->cas_server_url = $this->config['cas_server_url'];
         if (empty($this->phpcas_path)
                 or filter_var($this->cas_server_url, FILTER_VALIDATE_URL) === FALSE) {
@@ -97,7 +94,11 @@ class Cas {
 
         \phpCAS::logoutWithRedirectService($url);
     }
-
+    
+    /**
+     * 检查用户是否经过身份验证
+     * @return type
+     */
     public function is_authenticated() {
         return \phpCAS::isAuthenticated();
     }
